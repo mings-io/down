@@ -23,7 +23,7 @@ export const retrieveData = async () => {
 	}
 };
 
-export const appendData = async (item: string) => {
+export const appendData = async (item: any) => {
 	const data = await retrieveData()
 	data.push(item)
 	await storeData(data)
