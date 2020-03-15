@@ -3,6 +3,7 @@ import moment from 'moment'
 export interface DownItem {
 	value: string;
 	dateAdded: string;
+	tag?: string;
 }
 
 export const DownItemFactory = (value: string) => {
